@@ -1,39 +1,26 @@
 {
-  "version": 2,
-  "functions": {
-    "api.js": {
-      "maxDuration": 10,
-      "memory": 1024
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "webview.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/",
-      "dest": "/api.js"
+      "dest": "/server.js"
     },
     {
-      "src": "/api",
-      "dest": "/api.js"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/api.js"
-    },
-    {
-      "src": "/skins",
-      "dest": "/api.js"
-    },
-    {
-      "src": "/menu",
-      "dest": "/api.js"
-    },
-    {
-      "src": "/(.*)\\.(js|json|so|dat|pak)",
-      "dest": "/api.js"
+      "src": "/webview",
+      "dest": "/webview.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/api.js"
+      "dest": "/server.js"
     }
   ]
 }

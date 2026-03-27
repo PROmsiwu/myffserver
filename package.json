@@ -1,13 +1,5 @@
 {
-  "name": "ff-server-vercel",
+  "name": "ff-skin-server",
   "version": "1.0.0",
-  "description": "Free Fire Server for Vercel",
-  "main": "api.js",
-  "scripts": {
-    "start": "node api.js",
-    "dev": "node api.js"
-  },
-  "engines": {
-    "node": "18.x"
-  }
+  "main": "server.js"
 }
