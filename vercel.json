@@ -1,11 +1,8 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "server.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "webview.js",
       "use": "@vercel/node"
     }
   ],
@@ -13,10 +10,6 @@
     {
       "src": "/",
       "dest": "/server.js"
-    },
-    {
-      "src": "/webview",
-      "dest": "/webview.js"
     },
     {
       "src": "/(.*)",
