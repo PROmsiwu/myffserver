@@ -1,7 +1,8 @@
 {
-  "verAddr": "https://your-project.vercel.app/",
+  "verAddr": "https://myffserver.vercel.app/",
   "resetGuest": true,
   "status": "active",
   "news": "Welcome to My Private Server",
   "skin_access": true
+}
 }
