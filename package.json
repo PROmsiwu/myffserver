@@ -1,10 +1,13 @@
 {
-  "name": "ff-skins-server",
+  "name": "ff-server-vercel",
   "version": "1.0.0",
-  "description": "Free Fire Server for Content Creation",
+  "description": "Free Fire Server for Vercel",
   "main": "api.js",
   "scripts": {
-    "start": "node api.js"
+    "start": "node api.js",
+    "dev": "node api.js"
   },
-  "dependencies": {}
+  "engines": {
+    "node": "18.x"
+  }
 }
